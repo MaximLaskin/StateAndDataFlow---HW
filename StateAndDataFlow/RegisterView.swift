@@ -10,20 +10,23 @@ import SwiftUI
 struct RegisterView: View {
     @EnvironmentObject var user: UserManager
     @State private var name = ""
-    
+    private var characterLimit = 2
+
     var body: some View {
         VStack {
             HStack {
-                TextField("Enter your name", text: $name)
+                TextField("Enter your name...", text: $name)
                     .multilineTextAlignment(.center)
                 CharacterCounterView(character: $name)
                     .padding()
             }
             Button(action: registerUser) {
-                Image(systemName: "checkmark.circle")
+                Image(systemName: status() ? "checkmark.circle" : "xmark.circle")
                 Text("Ok")
             }
+            .disabled(status() ? false : true)
         }
+        .padding()
     }
     
     private func registerUser() {
@@ -31,6 +34,10 @@ struct RegisterView: View {
             user.name = name
             user.isRegister.toggle()
         }
+    }
+
+    private func status() -> Bool {
+        name.count > characterLimit
     }
 }
 

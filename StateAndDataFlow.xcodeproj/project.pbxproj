@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4358361B2909797100D3872B /* CharacterCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4358361A2909797100D3872B /* CharacterCounterView.swift */; };
+		4358361D2909B83F00D3872B /* BigButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4358361C2909B83F00D3872B /* BigButtonView.swift */; };
 		A87D1F482614ECD800B9ADC0 /* StateAndDataFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D1F472614ECD800B9ADC0 /* StateAndDataFlowApp.swift */; };
 		A87D1F4A2614ECD800B9ADC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D1F492614ECD800B9ADC0 /* ContentView.swift */; };
 		A87D1F4C2614ECDC00B9ADC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A87D1F4B2614ECDC00B9ADC0 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		4358361A2909797100D3872B /* CharacterCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCounterView.swift; sourceTree = "<group>"; };
+		4358361C2909B83F00D3872B /* BigButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButtonView.swift; sourceTree = "<group>"; };
 		A87D1F442614ECD800B9ADC0 /* StateAndDataFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateAndDataFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A87D1F472614ECD800B9ADC0 /* StateAndDataFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAndDataFlowApp.swift; sourceTree = "<group>"; };
 		A87D1F492614ECD800B9ADC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				A87D1F492614ECD800B9ADC0 /* ContentView.swift */,
 				A88B3FEF2614FC40007A756A /* RegisterView.swift */,
 				A88B3FF52614FEF6007A756A /* StarterView.swift */,
+				4358361C2909B83F00D3872B /* BigButtonView.swift */,
 				4358361A2909797100D3872B /* CharacterCounterView.swift */,
 				A87D1F572614F61400B9ADC0 /* TimeCounter.swift */,
 				A88B3FF22614FD39007A756A /* UserManager.swift */,
@@ -160,6 +163,7 @@
 				4358361B2909797100D3872B /* CharacterCounterView.swift in Sources */,
 				A88B3FF32614FD39007A756A /* UserManager.swift in Sources */,
 				A87D1F482614ECD800B9ADC0 /* StateAndDataFlowApp.swift in Sources */,
+				4358361D2909B83F00D3872B /* BigButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
