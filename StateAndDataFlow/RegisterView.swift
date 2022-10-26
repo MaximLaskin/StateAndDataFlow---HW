@@ -22,6 +22,7 @@ struct RegisterView: View {
             }
             Button(action: registerUser) {
                 Image(systemName: status() ? "checkmark.circle" : "xmark.circle")
+                    .foregroundColor(status() ? .green : .red)
                 Text("Ok")
             }
             .disabled(status() ? false : true)

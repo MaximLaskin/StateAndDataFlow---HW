@@ -8,13 +8,25 @@
 import SwiftUI
 
 struct BigButtonView: View {
+    @ObservedObject var timer: TimeCounter
+    var color: Color
+
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: timer.startTimer) {
+            Text("\(timer.buttonTitle)")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+        }
+        .frame(width: 200, height: 60)
+        .background(color)
+        .cornerRadius(20)
+        .overlay(
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(Color.black, lineWidth: 4)
+        )
     }
 }
 
-struct BigButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        BigButtonView()
-    }
-}
+
