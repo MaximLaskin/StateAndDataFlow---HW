@@ -27,7 +27,6 @@ class TimeCounter: ObservableObject {
         
         buttonDidTapped()
     }
-    
     @objc private func updateCounter() {
         if counter > 0 {
             counter -= 1
