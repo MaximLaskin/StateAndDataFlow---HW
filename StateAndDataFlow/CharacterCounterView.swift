@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CharacterCounterView: View {
     @Binding var character: String
-    let successColor = Color.green // разумно здесь определить или захардкодить в 17 строку?
+    let successColor = Color.green // разумно здесь определить или захардкодить цвет в 17 строку?
     let unsuccessColor = Color.red
 
     var body: some View {

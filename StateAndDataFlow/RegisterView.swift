@@ -25,7 +25,7 @@ struct RegisterView: View {
                     .foregroundColor(status() ? .green : .red)
                 Text("Ok")
             }
-            .disabled(status() ? false : true)
+            .disabled(!status())
         }
         .padding()
     }

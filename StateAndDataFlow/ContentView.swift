@@ -10,14 +10,13 @@ import SwiftUI
 struct ContentView: View {
     @StateObject private var timer = TimeCounter()
     @EnvironmentObject var user: UserManager
-    
 
-    
     var body: some View {
         VStack {
             Text("Hi, \(user.name)!")
                 .font(.title)
                 .offset(x: 0, y: 100)
+                
             Text("\(timer.counter)")
                 .font(.largeTitle)
                 .offset(x: 0, y: 200)
@@ -25,7 +24,15 @@ struct ContentView: View {
             ButtonView(timer: timer)
 
             Spacer()
-            BigButtonView(timer: timer, color: .red)
+            BigButtonView(
+                timer: timer,
+                color: .blue,
+                text: "Log Out",
+                action: {
+                    //
+                }
+            )
+            Button(NavigationLink("log out", destination: RegisterView()))
         }
         .padding()
         
@@ -56,6 +63,7 @@ struct ButtonView: View {
             RoundedRectangle(cornerRadius: 20)
                 .stroke(Color.black, lineWidth: 4)
         )
+        .shadow(radius: 10)
     }
 }
 
