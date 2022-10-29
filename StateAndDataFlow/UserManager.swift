@@ -16,7 +16,6 @@ struct Person {
 //    }
 }
 
-
 class UserManager: ObservableObject { // ObservableObject за которым наблюдаем
     @Published var isRegister = false // эти свойства не удалил пока, без них не запускается проект
     var name = ""
@@ -29,10 +28,7 @@ class UserManager: ObservableObject { // ObservableObject за которым н
 class DataStorage {
     static let shared = DataStorage()
 
-
 //    @AppStorage("contact") private var userDefaults: Data?
-
-
 
     private init() {}
 
