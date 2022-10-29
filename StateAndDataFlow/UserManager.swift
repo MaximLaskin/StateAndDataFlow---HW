@@ -20,7 +20,6 @@ class UserManager: ObservableObject { // ObservableObject за которым н
     @Published var isRegister = false // эти свойства не удалил пока, без них не запускается проект
     var name = ""
 
-
     @Published var person = Person()
 //    не понял чем инициализировать модель
 }
